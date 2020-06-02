@@ -35,7 +35,7 @@
 
 **AspectLinkExample**:
 - unhashed_id :: String
-- id :: String (MD5 hash of unhashed_id
+- id :: String // (MD5 hash of unhashed_id)
 - context :: Context 
 - true_aspect :: String // aspect id of the correct candidate aspect
 - candidate_aspects :: [Aspect] 
