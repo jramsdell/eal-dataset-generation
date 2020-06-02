@@ -153,15 +153,15 @@ The list of Aspects representing the top-level sections of the Wikipedia page th
 The following is an example of an AspectLinkExample json entry. The fields in this example have been truncated (truncated fields are denoted with three periods: ...):
 
 ```json
-{
+{ // This is an example of an AspectLinkExample
   "unhashed_id": "enwiki:Lake%20Opuatiaenwiki:Lake%20Opuatia/Opuatia%20Stream/4828a44f1fad9f8bec4cc6baada3c14cc3b80d75enwiki:Water%20qualitywater%20quality(69,82)",
   "id": "90b21342fe95f3001cbd81cc1ef8f090",
   "true_aspect": "enwiki:Water%20quality/Sampling%20and%20measurement",
   "context": {
     "target_entity": "enwiki:Water%20quality",
-    "location": {
+    "location": { // This is an example of a Location
       "location_id": "16f1a51dc7c7cf92df9d7dd7e42e96d8",
-      "page_id": "enwiki:Lake%20Opuatia",
+      "page_id": "enwiki:Lake%20Opuatia", // This refers to the page the mention is located in, not the page the mention links to!
       "page_title": "Lake Opuatia",
       "paragraph_id": "4828a44f1fad9f8bec4cc6baada3c14cc3b80d75",
       "section_id": [
@@ -202,7 +202,7 @@ The following is an example of an AspectLinkExample json entry. The fields in th
     }
   },
   "candidate_aspects": [
-    {
+    { # This is an example of an Aspect
       "aspect_id": "enwiki:Water%20quality/Sampling%20and%20measurement",
       "aspect_name": "Sampling and measurement",
       "location": {
