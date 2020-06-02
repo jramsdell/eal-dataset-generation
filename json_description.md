@@ -44,12 +44,21 @@
 # Json Object Details
 
 ### Location
+A *Location* provides information about where the context, or a canddidate aspect, are located within a page.
 
-**location_id :: Str**
-This is 
+**location_id :: Str**  
+This is a unique id assigned to each location.
 
-- page_id :: String
-* page_title :: String
-- paragraph_id :: String
-* sectionId :: [String] // [page_id, section_id)
+**page_id :: String**  
+The id of the page in which a context/aspect is located (e.x. "enwiki:Chocolate%20chip%20cookie").
+
+**page_title :: String**  
+The title of the page in which a context/aspect is located (e.x. "Chocolate chip cookie").
+
+**paragraph_id :: Optional<String>**  
+The id of the paragraph in which a context is located. As this only applies to the context, Aspect Locations do not include this field.
+
+**section_id :: [String]**
+This is a two element array that contains the page_id and section_id as elements.
+
 * sectionHeadings :: [String] // [section_heading]
