@@ -150,6 +150,7 @@ This field is the aspect_id field found within the correct Aspect (which is loca
 The list of Aspects representing the top-level sections of the Wikipedia page that was linked to by the target entity mention. 
 
 # Example
+The following is an example of an AspectLinkExample json entry. The fields in this example have been truncated (truncated fields are denoted with three periods: ...):
 
 ```json
 {
