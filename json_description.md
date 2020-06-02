@@ -203,78 +203,6 @@ The following is an example of an AspectLinkExample json entry. The fields in th
   },
   "candidate_aspects": [
     {
-      "aspect_id": "enwiki:Water%20quality/Standards",
-      "aspect_name": "Standards",
-      "location": {
-        "location_id": "5676200a04aa6af0f3a0d31faa339877",
-        "page_id": "enwiki:Water%20quality",
-        "page_title": "Water quality",
-        "section_id": [
-          "enwiki:Water%20quality",
-          "Standards"
-        ],
-        "section_headings": [
-          "Standards"
-        ]
-      },
-      "aspect_content": {
-        "content": "In the setting of standards, agencies make political and technical/scientific decisions about how the water will be used. ...",
-        "entities": [
-          {
-            "entity_name": "Body of water",
-            "entity_id": "enwiki:Body%20of%20water",
-            "mention": "water bodies",
-            "start": 145,
-            "end": 157
-          },
-          {
-            "entity_name": "Environmental science",
-            "entity_id": "enwiki:Environmental%20science",
-            "mention": "Environmental scientists",
-            "start": 295,
-            "end": 319
-          },
-         ...
-        ]
-      }
-    },
-    {
-      "aspect_id": "enwiki:Water%20quality/Categories",
-      "aspect_name": "Categories",
-      "location": {
-        "location_id": "5639f047de6857fdd9acbfdb69f673af",
-        "page_id": "enwiki:Water%20quality",
-        "page_title": "Water quality",
-        "section_id": [
-          "enwiki:Water%20quality",
-          "Categories"
-        ],
-        "section_headings": [
-          "Categories"
-        ]
-      },
-      "aspect_content": {
-        "content": "The parameters for water quality are determined by the intended use. Work in the area of water quality tends to be focused on water that is treated for human consumption, industrial use, or in the environment.\nHuman consumption ....",
-        "entities": [
-          {
-            "entity_name": "Water treatment",
-            "entity_id": "enwiki:Water%20treatment",
-            "mention": "treated",
-            "start": 140,
-            "end": 147
-          },
-          {
-            "entity_name": "Microorganism",
-            "entity_id": "enwiki:Microorganism",
-            "mention": "microorganism",
-            "start": 280,
-            "end": 293
-          },
-         ...
-        ]
-      }
-    },
-    {
       "aspect_id": "enwiki:Water%20quality/Sampling%20and%20measurement",
       "aspect_name": "Sampling and measurement",
       "location": {
@@ -298,13 +226,6 @@ The following is an example of an AspectLinkExample json entry. The fields in th
             "mention": "equilibrium",
             "start": 211,
             "end": 222
-          },
-          {
-            "entity_name": "Environment (systems)",
-            "entity_id": "enwiki:Environment%20(systems)",
-            "mention": "surroundings",
-            "start": 232,
-            "end": 244
           },
          ...
         ]
