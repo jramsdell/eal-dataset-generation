@@ -86,6 +86,13 @@ The unique id of the Wikipedia page that the entity links to (e.x. "enwiki:Choco
 The anchor text of the entity link.
 
 
-target_mention :: Boolean
-- start :: Int
-- end :: Int
+**target_mention :: Optional<Boolean>**  
+  This field is only included in the Context's "sentence" and "paragraph" entities.
+  EntityMentions located in Aspects do not utilize this field.
+  When True, it represents that this is the target entity mention that links to a section in a Wikipedia page, and this is used to determine the ground truth for candidate aspects. 
+  
+**start :: Int**  
+The start coordinates of the anchor text located in the raw, unprocessed text in which the link occurs.
+
+**end :: Int**  
+The end coordinates of the anchor text located in the raw, unprocessed text in which the link occurs.
