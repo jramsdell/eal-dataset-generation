@@ -148,3 +148,168 @@ This field is the aspect_id field found within the correct Aspect (which is loca
 
 **candidate_aspects :: [Aspect]**  
 The list of Aspects representing the top-level sections of the Wikipedia page that was linked to by the target entity mention. 
+
+# Example
+
+```json
+{
+  "unhashed_id": "enwiki:Lake%20Opuatiaenwiki:Lake%20Opuatia/Opuatia%20Stream/4828a44f1fad9f8bec4cc6baada3c14cc3b80d75enwiki:Water%20qualitywater%20quality(69,82)",
+  "id": "90b21342fe95f3001cbd81cc1ef8f090",
+  "true_aspect": "enwiki:Water%20quality/Sampling%20and%20measurement",
+  "context": {
+    "target_entity": "enwiki:Water%20quality",
+    "location": {
+      "location_id": "16f1a51dc7c7cf92df9d7dd7e42e96d8",
+      "page_id": "enwiki:Lake%20Opuatia",
+      "page_title": "Lake Opuatia",
+      "paragraph_id": "4828a44f1fad9f8bec4cc6baada3c14cc3b80d75",
+      "section_id": [
+        "enwiki:Lake%20Opuatia",
+        "Opuatia%20Stream"
+      ],
+      "section_headings": [
+        "Opuatia Stream"
+      ]
+    },
+    "sentence": {
+      "content": "A water quality monitoring site, about 8 km from the headwaters, has ...",
+      "entities": [
+        {
+          "entity_name": "Water quality",
+          "entity_id": "enwiki:Water%20quality",
+          "mention": "water quality",
+          "target_mention": true,
+          "start": 2,
+          "end": 15
+        },
+        ...
+      ]
+    },
+    "paragraph": {
+      "content": "The stream rises near Ponganui Road, about 30 km up from the lake. A water quality ...",
+      "entities": [
+        {
+          "entity_name": "Water quality",
+          "entity_id": "enwiki:Water%20quality",
+          "mention": "water quality",
+          "target_mention": true,
+          "start": 69,
+          "end": 82
+        },
+        ...
+      ]
+    }
+  },
+  "candidate_aspects": [
+    {
+      "aspect_id": "enwiki:Water%20quality/Standards",
+      "aspect_name": "Standards",
+      "location": {
+        "location_id": "5676200a04aa6af0f3a0d31faa339877",
+        "page_id": "enwiki:Water%20quality",
+        "page_title": "Water quality",
+        "section_id": [
+          "enwiki:Water%20quality",
+          "Standards"
+        ],
+        "section_headings": [
+          "Standards"
+        ]
+      },
+      "aspect_content": {
+        "content": "In the setting of standards, agencies make political and technical/scientific decisions about how the water will be used. ...",
+        "entities": [
+          {
+            "entity_name": "Body of water",
+            "entity_id": "enwiki:Body%20of%20water",
+            "mention": "water bodies",
+            "start": 145,
+            "end": 157
+          },
+          {
+            "entity_name": "Environmental science",
+            "entity_id": "enwiki:Environmental%20science",
+            "mention": "Environmental scientists",
+            "start": 295,
+            "end": 319
+          },
+         ...
+        ]
+      }
+    },
+    {
+      "aspect_id": "enwiki:Water%20quality/Categories",
+      "aspect_name": "Categories",
+      "location": {
+        "location_id": "5639f047de6857fdd9acbfdb69f673af",
+        "page_id": "enwiki:Water%20quality",
+        "page_title": "Water quality",
+        "section_id": [
+          "enwiki:Water%20quality",
+          "Categories"
+        ],
+        "section_headings": [
+          "Categories"
+        ]
+      },
+      "aspect_content": {
+        "content": "The parameters for water quality are determined by the intended use. Work in the area of water quality tends to be focused on water that is treated for human consumption, industrial use, or in the environment.\nHuman consumption ....",
+        "entities": [
+          {
+            "entity_name": "Water treatment",
+            "entity_id": "enwiki:Water%20treatment",
+            "mention": "treated",
+            "start": 140,
+            "end": 147
+          },
+          {
+            "entity_name": "Microorganism",
+            "entity_id": "enwiki:Microorganism",
+            "mention": "microorganism",
+            "start": 280,
+            "end": 293
+          },
+         ...
+        ]
+      }
+    },
+    {
+      "aspect_id": "enwiki:Water%20quality/Sampling%20and%20measurement",
+      "aspect_name": "Sampling and measurement",
+      "location": {
+        "location_id": "5af2d09ef25d5a67b77db3791a0655db",
+        "page_id": "enwiki:Water%20quality",
+        "page_title": "Water quality",
+        "section_id": [
+          "enwiki:Water%20quality",
+          "Sampling%20and%20measurement"
+        ],
+        "section_headings": [
+          "Sampling and measurement"
+        ]
+      },
+      "aspect_content": {
+        "content": "The complexity of water quality as a subject is reflected in the many types of measurements of water quality indicators. The most accurate ... ",
+        "entities": [
+          {
+            "entity_name": "Thermodynamic equilibrium",
+            "entity_id": "enwiki:Thermodynamic%20equilibrium",
+            "mention": "equilibrium",
+            "start": 211,
+            "end": 222
+          },
+          {
+            "entity_name": "Environment (systems)",
+            "entity_id": "enwiki:Environment%20(systems)",
+            "mention": "surroundings",
+            "start": 232,
+            "end": 244
+          },
+         ...
+        ]
+      }
+    },
+    ...
+  ]
+}
+```
