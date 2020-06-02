@@ -61,7 +61,7 @@ The id of the paragraph in which a context is located. As this only applies to t
 **section_id :: [String]**  
 This is a two element array that contains the page_id and section_id as elements. (e.x. ["enwiki:Chocolate%20chip%20cookie", "Composition%20and%20variants"])
 
-**sectionHeadings :: [String]** 
+**sectionHeadings :: [String]**  
 In this implementation, the array only contains a single element, which is the heading of a top-level section. (e.x. ["Composition and variants"])
 
 ## AnnotatedText
@@ -84,7 +84,6 @@ The unique id of the Wikipedia page that the entity links to (e.x. "enwiki:Choco
 
 **mention :: String**  
 The anchor text of the entity link.
-
 
 **target_mention :: Optional<Boolean>**  
   This field is only included in the Context's "sentence" and "paragraph" entities.
