@@ -4,7 +4,7 @@
 - location_id :: Str // Hash of (section_id + paragraph_id) 
 - page_id :: String
 - page_title :: String
-- paragraph_id :: Optional<String>
+- paragraph_id :: Optional(String)
 - sectionId :: [String] // [page_id, section_id)
 - sectionHeadings :: [String] // [section_heading]
 
@@ -16,7 +16,7 @@
 - entity_name :: String
 - entity_id :: String
 - mention :: String
-- target_mention :: Optional<Boolean>
+- target_mention :: Optional(Boolean)
 - start :: Int
 - end :: Int
 
@@ -55,7 +55,7 @@ The id of the page in which a context/aspect is located (e.x. "enwiki:Chocolate%
 **page_title :: String**  
 The title of the page in which a context/aspect is located (e.x. "Chocolate chip cookie").
 
-**paragraph_id :: Optional<String>**  
+**paragraph_id :: Optional(String)**  
 The id of the paragraph in which a context is located. As this only applies to the context, Aspect Locations do not include this field.
 
 **section_id :: [String]**  
@@ -85,7 +85,7 @@ The unique id of the Wikipedia page that the entity links to (e.x. "enwiki:Choco
 **mention :: String**  
 The anchor text of the entity link.
 
-**target_mention :: Optional<Boolean>**  
+**target_mention :: Optional(Boolean)**  
   This field is only included in the Context's "sentence" and "paragraph" entities.
   EntityMentions located in Aspects do not utilize this field.
   When True, it represents that this is the target entity mention that links to a section in a Wikipedia page, and this is used to determine the ground truth for candidate aspects. 
