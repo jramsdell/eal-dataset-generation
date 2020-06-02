@@ -1,12 +1,12 @@
 # Json Object Definitions
 
 **Location**:
-* location_id :: Str // Hash of (section_id + paragraph_id) 
+- location_id :: Str // Hash of (section_id + paragraph_id) 
 - page_id :: String
-* page_title :: String
+- page_title :: String
 - paragraph_id :: Optional<String>
-* sectionId :: [String] // [page_id, section_id)
-* sectionHeadings :: [String] // [section_heading]
+- sectionId :: [String] // [page_id, section_id)
+- sectionHeadings :: [String] // [section_heading]
 
 **AnnotatedText**:
 - content :: String
