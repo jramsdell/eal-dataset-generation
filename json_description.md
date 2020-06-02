@@ -45,7 +45,7 @@
 
 ### Location
 
-** location_id :: Str **
+**location_id :: Str**
 This is 
 
 - page_id :: String
