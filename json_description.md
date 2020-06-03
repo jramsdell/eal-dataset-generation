@@ -5,8 +5,8 @@
 - page_id :: String
 - page_title :: String
 - paragraph_id :: Optional(String)
-- sectionId :: [String] // [page_id, section_id)
-- sectionHeadings :: [String] // [section_heading]
+- section_id :: [String] // [page_id, section_id)
+- section_headings :: [String] // [section_heading]
 
 **AnnotatedText**:
 - content :: String
@@ -61,7 +61,7 @@ The id of the paragraph in which a context is located. As this only applies to t
 **section_id :: [String]**  
 This is a two element array that contains the page_id and section_id as elements. (e.x. ["enwiki:Chocolate%20chip%20cookie", "Composition%20and%20variants"])
 
-**sectionHeadings :: [String]**  
+**section_headings :: [String]**  
 In this implementation, the array only contains a single element, which is the heading of a top-level section. (e.x. ["Composition and variants"])
 
 ## AnnotatedText
